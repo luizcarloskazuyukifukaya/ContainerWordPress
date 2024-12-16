@@ -1,5 +1,10 @@
 # ContainerWordPress
 
+## Prerequisites
+You need to have Docker and Docker Compose installed in your environment.
+With the container technology supported by Docker, you can run the WordPress
+web server in any environment like Linux, MacOS, Windows and so on.
+
 ## Quick Start
 - Launch Containers: Run the following command to start the containers in detached mode:
 ```bash
