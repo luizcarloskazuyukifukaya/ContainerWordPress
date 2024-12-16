@@ -1,0 +1,17 @@
+version: '3'
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    env_file:
+      - ./.app.env
+    volumes:
+      - ./wordpress:/var/www/html
+  db:
+    image: mysql:latest
+    env_file:
+      - ./.app.env
+    volumes:
+      - ./mysql:/var/lib/mysql
+
